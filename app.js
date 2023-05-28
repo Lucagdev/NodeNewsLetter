@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 //app.get chama a página a ser criada no servidor com função de request(req) e respond(res)
 app.get('/', function (req, res) {
     //respond.send ou res.send envia o que tiver entre () para o servidor // sendFile envia um arquivo
-    res.sendFile(__dirname + '/signup.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 //app.post está vinculado com o form action '/' e method 'post' no HTML. Envia as informações do html
@@ -75,7 +75,7 @@ app.post('/', function (req, res) {
 
 
 //sintaxe padrão para criar o servidor na porta mencionada, ex: porta 3000
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log('Server started on port 3000')
 })
 
