@@ -79,6 +79,3 @@ app.listen(process.env.PORT || 3000, function () {
     console.log('Server started on port 3000')
 })
 
-// audience ID / 0fd541aff9
-
-// api mailchimp / 89a885ab232531e38fada373c9e194ac-us21
